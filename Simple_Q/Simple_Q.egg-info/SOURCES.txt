@@ -1,0 +1,9 @@
+LICENSE
+Qlearning.py
+README.md
+pyproject.toml
+Simple_Q.egg-info/PKG-INFO
+Simple_Q.egg-info/SOURCES.txt
+Simple_Q.egg-info/dependency_links.txt
+Simple_Q.egg-info/requires.txt
+Simple_Q.egg-info/top_level.txt

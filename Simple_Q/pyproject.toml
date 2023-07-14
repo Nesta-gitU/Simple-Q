@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "Simple_Q"
-version = "1.0.0"
+version = "1.0.1"
 description = "A low learning curve implementation of a Q-Learning algorithm."
 readme = "README.md"
 authors = [{ name = "Nesta", email = "nesta110402@gmail.com" }]
