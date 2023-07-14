@@ -5,7 +5,7 @@ A low learning curve implementation of Q-learning.
 [![PyPI](https://img.shields.io/pypi/v/qlearning)](https://pypi.org/project/Simple-Q/)
 [![License](https://img.shields.io/pypi/l/qlearning)](https://github.com/Nesta-gitU/Simple-Q/blob/main/Simple_Q/LICENSE).
 
-Q-learning is a reinforcement learning algorithm that allows an agent to learn an optimal policy for sequential decision-making problems. This implementation provides an easy-to-use and beginner-friendly approach to Q-learning, making it accessible to users with varying levels of experience. This implementation is build to work with "GYM" environments from the [Gymnasium Project](https://gymnasium.farama.org/) 
+Q-learning is a reinforcement learning algorithm that allows an agent to learn an optimal policy for sequential decision-making problems. This implementation provides an easy-to-use and beginner-friendly approach to Q-learning, making it accessible to users with varying levels of experience. This implementation is build to work with "GYM" environments from the [Gymnasium Project](https://gymnasium.farama.org/).
 
 ## Features
 
