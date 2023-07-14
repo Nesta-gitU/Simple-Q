@@ -3,7 +3,7 @@
 A low learning curve implementation of Q-learning.
 
 [![PyPI](https://img.shields.io/pypi/v/qlearning)](https://pypi.org/project/Simple-Q/)
-[![License](https://img.shields.io/pypi/l/qlearning)](https://github.com/Nesta-gitU/Simple-Q/Simple-Q/LICENSE).
+[![License](https://img.shields.io/pypi/l/qlearning)](https://github.com/Nesta-gitU/Simple-Q/blob/main/Simple_Q/LICENSE).
 
 Q-learning is a reinforcement learning algorithm that allows an agent to learn an optimal policy for sequential decision-making problems. This implementation provides an easy-to-use and beginner-friendly approach to Q-learning, making it accessible to users with varying levels of experience. This implementation is build to work with "GYM" environments from the [Gymnasium Project](https://gymnasium.farama.org/) 
 
@@ -72,11 +72,11 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/Nesta-gitU/Simple-Q/Simple-Q/LICENSE).
+This project is licensed under the [MIT License](https://github.com/Nesta-gitU/Simple-Q/blob/main/Simple_Q/LICENSE).
 
 ## Acknowledgements
 
-This code is originally based upon the [Q-Learning implementation](
+This code is originally based upon the [Q-Learning implementation](https://github.com/PacktPublishing/Advanced-Deep-Learning-with-Keras/blob/master/chapter9-drl/q-learning-9.3.1.py) from the book: Advanced Deep Learning with TensorFlow 2 and Keras by Rowel Atienza. However many changes have been made to the original code, including the addition of the polynomial learning rate decay as well as the ability to work with custom objects for states and actions. 
 
 ## References
 Even-Dar, E., Y. Mansour, and P. Bartlett (2003). Learning rates for q-learning. Journal of machine
