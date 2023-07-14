@@ -1,4 +1,3 @@
-```
 # Q-Learning
 
 A low learning curve implementation of Q-learning.
@@ -43,7 +42,7 @@ for n in range(N):
     agent.update_epsilon()
 ```
 
-See also the [Savings Problem](https://github.com/Nesta-gitU/Simple-Q/SavingsProblem) example in the GitHub repository.
+See also the [Savings Problem](https://github.com/Nesta-gitU/Simple-Q/tree/main/SavingsProblem) example in the GitHub repository.
 
 ## Documentation
 
@@ -85,4 +84,3 @@ learning Research 5(1).
 
 Watkins, C. J. and P. Dayan (1992, May). Technical note: Q-learning. Machine Learning 8(3),
 279–292
-```
