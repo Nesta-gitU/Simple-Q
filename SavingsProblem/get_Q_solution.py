@@ -1,5 +1,17 @@
+import sys
+import os
+
+# Get the current directory
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Get the parent directory path
+parent_dir = os.path.dirname(current_dir)
+
+# Add the parent directory to the module search path
+sys.path.append(parent_dir)
+
 import Savings_problem_env
-import Qlearning
+from Qlearning import Qlearning
 import pandas as pd
 import numpy as np
 import copy
@@ -20,17 +32,15 @@ def get_solution(N, env, Qlearner):
     
     for i in range(N):
         
-        action_index = Qlearner.get_action(state)
-        action = env.action_space[action_index]
+        action = Qlearner.get_action(state)
         #print(action)
 
         if i == N-1:
             #print(i)
             #print(state)
-            #print('epoch', env.current_epoch)
-            action_index = len(env.action_space) - 1
+            #print('epoch', env.current_epoch
             #print(action_index)
-            action = env.action_space[action_index]
+            action = 1
             #print(action)
 
         next_state, reward, terminated, truncated, info = env.step(action, epoch = i + 1)
@@ -42,7 +52,7 @@ def get_solution(N, env, Qlearner):
         assets_per_action.append(env.current_assets)
         
         #print('i =', i)
-        Qlearner.update_q_table(state, action_index, reward, next_state)
+        Qlearner.update_q_table(state, action, reward, next_state)
 
         if terminated or truncated:
             return actions_taken, amounts_consumed, assets_per_action, total_reward
@@ -59,7 +69,8 @@ def main():
     n_episodes = 20000 
 
     env = Savings_problem_env.Savings_problem_env(number_of_epochs= N)
-    Qlearner = Qlearning.Qlearning(n_states= env.state_space[-1,-1] + 1 , n_actions=len(env.action_space))
+    Qlearner = Qlearning.Qlearning(states= env.state_space[-1,-1] + 1 , actions= env.action_space, alpha = 1)
+
     print(env.state_space[-1,-1] + 1)
 
     actions_all_episodes = []
