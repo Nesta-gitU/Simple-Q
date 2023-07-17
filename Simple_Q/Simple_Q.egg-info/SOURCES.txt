@@ -1,6 +1,6 @@
 LICENSE
-Qlearning.py
 README.md
+Simple_Q.py
 pyproject.toml
 Simple_Q.egg-info/PKG-INFO
 Simple_Q.egg-info/SOURCES.txt

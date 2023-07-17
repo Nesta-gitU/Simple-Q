@@ -96,8 +96,10 @@ class Qlearning():
         # warnings for invalid parameters
         if alpha not in self._parameter_constraints["alpha"] and not isinstance(alpha, (int, float)):
             raise ValueError("alpha must be in {}, or of types: int, float".format(self._parameter_constraints["alpha"]))
-        elif alpha > 1 or alpha <= 0:
-            raise Warning("alpha should be in (0,1]")
+        
+        if isinstance(alpha, (int, float)):
+            if alpha > 1 or alpha <= 0:
+                raise Warning("alpha should be in (0,1]")
         
         if epsilon_decay not in self._parameter_constraints["epsilon_decay"]:
             raise ValueError("epsilon_decay must be in {}".format(self._parameter_constraints["epsilon_decay"]))
